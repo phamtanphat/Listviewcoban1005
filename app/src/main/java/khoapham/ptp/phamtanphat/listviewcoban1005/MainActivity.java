@@ -25,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
         lv = findViewById(R.id.listview);
         //2 : Tao ra 1 ban ve
 
+        mangmonhoc.add("Toan");
+        mangmonhoc.add("Ly");
+        mangmonhoc.add("Hoa");
+        mangmonhoc.add("Sinh");
+        mangmonhoc.add("Su");
+        mangmonhoc.add("Dia");
+
         banve = new ArrayAdapter(MainActivity.this , R.id.)
         //3 : Gan ban ve vao listview
     }
-
 
 }
