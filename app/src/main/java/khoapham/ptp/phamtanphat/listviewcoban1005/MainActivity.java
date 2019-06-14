@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         //3 : Gan ban ve vao listview
         lv.setAdapter(banve);
 
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 mangmonhoc.remove(position);
                 banve.notifyDataSetChanged();
-
+                return true;
             }
         });
     }
